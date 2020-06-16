@@ -242,7 +242,7 @@ namespace MediaBrowser.Model.Configuration
 
         public string[] RemoteIPFilter { get; set; }
 
-        public bool IsRemoteIPFilterBlacklist { get; set; }
+        public bool IsRemoteIPFilterBlocklist { get; set; }
 
         public int ImageExtractionTimeoutMs { get; set; }
 
