@@ -340,7 +340,7 @@ namespace Emby.Server.Implementations.HttpServer
 
                 if (addressFilter.Length > 0 && !_networkManager.IsInLocalNetwork(remoteIp))
                 {
-                    if (_config.Configuration.IsRemoteIPFilterBlacklist)
+                    if (_config.Configuration.IsRemoteIPFilterBlocklist)
                     {
                         return !_networkManager.IsAddressInSubnets(remoteIp, addressFilter);
                     }
